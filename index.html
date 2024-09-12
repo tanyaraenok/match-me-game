@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="icon" href="images/favicon-plaing-cards.png" type="image/png">
+  <title>Игра в пары</title>
+  <script defer src="main.js"></script>
+</head>
+
+<body>
+
+  <div id="container" class="container flex">
+    <h1 class="title animate__animated animate__fadeInUp animate__delay-1s" id="title">
+      Игра в пары
+    </h1>
+    <div class="timer hidden flex" id="timer">
+      <div class="minutes" id="minutes">00 :</div>
+      <div class="seconds" id="seconds">60 </div>
+    </div>
+    <form class="start-game-form flex animate__animated animate__fadeInRight animate__delay-2s" id="start-game-form">
+      <label class="label flex" id="label">
+        Введите чётное количество строк/столбцов от 2 до 10
+        <input class="input" id="input" type="number" min="2" max="10" value="4">
+      </label>
+      <button class="button" id="button">
+        Начать игру
+      </button>
+    </form>
+    <h2 class="final-title hidden" id="final-title">
+      Вы победили! Сыграем ещё раз?
+    </h2>
+    <h2 class="loss-title hidden" id="loss-title">
+      Вы проиграли! Сыграем ещё раз?
+    </h2>
+    <button class="final-button hidden" id="final-button">
+      Да!
+    </button>
+  </div>
+
+</body>
+
+</html>
